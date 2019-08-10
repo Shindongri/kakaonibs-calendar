@@ -1,12 +1,12 @@
 import React from 'react'
-import ControlView from './components/ControlView'
-import MonthlyCalendarView from './components/MonthlyCalendarView'
+
+import AppProvider from './store'
+import MainPage from './containers/MainPage'
 
 const App = () => (
-  <div>
-    <ControlView />
-    <MonthlyCalendarView />
-  </div>
+  <AppProvider>
+    <MainPage />
+  </AppProvider>
 )
 
 export default App

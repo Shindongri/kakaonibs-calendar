@@ -1,17 +1,8 @@
 module.exports = (api) => {
   api.cache(true)
 
-  const presets = ['env', 'react']
-  const plugins = [
-    [
-      'import',
-      {
-        libraryName: 'antd',
-        libraryDirectory: 'es',
-        style: 'css'
-      }
-    ]
-  ]
+  const presets = ['@babel/preset-env', '@babel/preset-react']
+  const plugins = []
 
   return {
     presets,
