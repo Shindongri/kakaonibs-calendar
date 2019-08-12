@@ -1,5 +1,5 @@
 import { differenceInDays, differenceInHours, addDays, addHours } from 'date-fns'
-import { IDate } from '../components/MonthlyCalendarView.spec'
+import { IDate } from '../components/MonthlyCalendarView/MonthlyCalendarView.spec'
 
 /* 시작일, 종료일 사이의 날짜 데이터 반환 */
 export const dateBetweenFromTo = (startDay: Date, endDay: Date) => [...Array( differenceInDays(endDay, startDay) + 1 )].fill(0).map((n, i) => ({ key: (n + i), day: addDays(startDay, (n + i)) }))

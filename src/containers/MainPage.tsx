@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 
-import ControlView from "../components/ControlView"
-import MonthlyCalendarView from "../components/MonthlyCalendarView"
-import WeeklyCalendarView from "../components/WeeklyCalendarView"
+import ControlView from "../components/ControlView/ControlView"
+import MonthlyCalendarView from "../components/MonthlyCalendarView/MonthlyCalendarView"
+import WeeklyCalendarView from "../components/WeeklyCalendarView/WeeklyCalendarView"
 
 import { useStore } from "../store"
 
